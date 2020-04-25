@@ -6,9 +6,13 @@ public class MainWindow extends Frame {
     Menu panel;
 
     public MainWindow() {
-
+        addWindowListener(new WindowAdapter() {
+            public void windowClosing(WindowEvent e) {
+                System.exit(0);
+            }
+        });
         setResizable(false);
-        addKeyListener(new KeyAdapter(){
+        addKeyListener(new KeyAdapter() {
 
             @Override
             public void keyTyped(KeyEvent keyEvent) {
@@ -17,7 +21,7 @@ public class MainWindow extends Frame {
 
             @Override
             public void keyPressed(KeyEvent keyEvent) {
-                if(keyEvent.getKeyCode()== KeyEvent.VK_ESCAPE)
+                if (keyEvent.getKeyCode() == KeyEvent.VK_ESCAPE)
                     System.exit(0);
             }
 
@@ -32,21 +36,22 @@ public class MainWindow extends Frame {
             }
         });
         setLayout(null);
-        setSize(500,500);
+        setSize(500, 500);
         setVisible(true);
         panel = new Menu();
-        panel.setBackground(Color.PINK);//Color.getHSBColor(137, 0, 7));
-        panel.setBounds(0,getInsets().top,500,495-getInsets().top);
+        panel.setBackground(Color.PINK);
+        panel.setBounds(0, getInsets().top, 500, 495 - getInsets().top);
         add(panel);
         Button startButton = new Button("New Game");
-        startButton.setBounds(0,0,100,60);
+        startButton.setBounds(200, 60, 100, 60);
         startButton.addActionListener((e) -> {
-               startGame(panel);
+            startGame(panel);
         });
         panel.add(startButton);
 
     }
-    public void startGame(Panel panel){
+
+    public void startGame(Panel panel) {
         game = new Game(this);
         add(game);
         remove(panel);
