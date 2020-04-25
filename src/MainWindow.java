@@ -44,11 +44,8 @@ public class MainWindow extends Frame {
         add(panel);
         Button startButton = new Button("New Game");
         startButton.setBounds(200, 60, 100, 60);
-        startButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent actionEvent) {
-                startGame(panel);
-            }
+        startButton.addActionListener((e) -> {
+            startGame(panel);
         });
         panel.add(startButton);
 

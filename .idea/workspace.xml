@@ -2,25 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="15ff0cfb-41f9-42b7-a799-165187dbde62" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DoubleRowEnemies.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Renderable.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Spaceinvaders/Bullet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Spaceinvaders/Bullet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Spaceinvaders/Enemy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Spaceinvaders/Enemy.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Spaceinvaders/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Spaceinvaders/Game.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Spaceinvaders/MainWindow$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Spaceinvaders/MainWindow$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Spaceinvaders/MainWindow$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Spaceinvaders/MainWindow$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Spaceinvaders/MainWindow.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Spaceinvaders/MainWindow.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Spaceinvaders/Ship.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Spaceinvaders/Ship.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Spaceinvaders/StartUp$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Spaceinvaders/StartUp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Spaceinvaders/StartUp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Bullet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Bullet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Enemy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Enemy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MainWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MainWindow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Ship.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Ship.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,6 +83,7 @@
       <workItem from="1587631209400" duration="3192000" />
       <workItem from="1587645746584" duration="1645000" />
       <workItem from="1587710437680" duration="14569000" />
+      <workItem from="1587814438479" duration="398000" />
     </task>
     <servers />
   </component>
@@ -167,6 +151,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="162" key="SettingsEditor/0.0.1920.1040/-1360.304.1360.728@0.0.1920.1040" timestamp="1585488942352" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1587814538235">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1360.304.1360.728@0.0.1920.1040" timestamp="1587814538235" />
     <state x="656" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1584378894594">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
