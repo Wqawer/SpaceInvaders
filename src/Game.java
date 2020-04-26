@@ -46,9 +46,13 @@ public class Game extends Panel {
         if(!ship.bulletsToRegister.isEmpty()){
             ship.bulletsToRegister.forEach(bullet -> add(bullet));
         }
+        if(!enemies.bulletsToRegister.isEmpty()){
+            enemies.bulletsToRegister.forEach(enemyBullet -> add(enemyBullet));
+        }
         List<Enemy> enemyToDel = new ArrayList<Enemy>();
         List<Bullet> bulletToDel = new ArrayList<Bullet>();
         ship.bulletsToRegister.clear();
+        enemies.bulletsToRegister.clear();
         enemies.enemyList.forEach(enemy -> {if(enemy.isEndReached())isGameOver=true;});
         ship.bullets.forEach(bullet -> {
             if(bullet.y<0) {
@@ -67,11 +71,21 @@ public class Game extends Panel {
                 });
             }
         });
+        enemies.bullets.forEach(bullet->
+        {
+            if(bullet.hitbox.intersects(ship.hitbox))
+                isGameOver = true;
+            if(bullet.y>500){
+                remove(bullet);
+                enemies.enemyList.remove(bullet);
+            }
+        });
         ship.bullets.removeAll(bulletToDel);
         enemies.enemyList.removeAll(enemyToDel);
         objectList.removeAll(bulletToDel);
         objectList.removeAll(enemyToDel);
         if(enemies.enemyList.isEmpty()) {
+            objectList.remove(enemies);
             enemies = new DoubleRowEnemies(level++);
             objectList.add(enemies);
             enemies.enemyList.forEach(e-> add(e));

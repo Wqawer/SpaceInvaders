@@ -21,7 +21,6 @@ public class GameOverScreen extends Panel {
                 String line = null;
                 while ((line = reader.readLine()) != null&&scores.size()<5) {
                     scores.add(line);
-                    System.out.println(line);
                 }
 
             } catch (IOException x) {
