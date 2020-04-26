@@ -9,6 +9,7 @@ public class DoubleRowEnemies implements Renderable{
         setEnemies(level);
     }
     int level;
+    long cooldown= 100000;
     public void render(int deltatime){
         if(enemyOnBoudry())
             moveToNextRow();

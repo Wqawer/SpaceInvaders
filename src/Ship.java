@@ -10,6 +10,7 @@ public class Ship extends Canvas implements Renderable {
     boolean isPressed = false;
     boolean shotPending = false;
     long lastShoot=0;
+    Rectangle hitbox = new Rectangle(225,400,50,50);
     int lastKeyPressed;
     List<Bullet> bullets;
     List<Bullet> bulletsToRegister;
@@ -65,6 +66,7 @@ public class Ship extends Canvas implements Renderable {
             else if(x>450)
                 x=450;
             setBounds((int)x, (int)y, 50, 50);
+            hitbox.setBounds((int)x, (int)y, 50, 50);
         }
         if(shotPending){
             shotPending=false;

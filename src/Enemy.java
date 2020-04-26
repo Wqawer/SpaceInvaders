@@ -28,4 +28,5 @@ public class Enemy extends Canvas implements Renderable {
     public boolean isBorderReached(){
         return  (x<20&&!goingRight) || (x>450&&goingRight);
     }
+    public boolean isEndReached(){return y>400;}
 }

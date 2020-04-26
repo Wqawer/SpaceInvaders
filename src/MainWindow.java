@@ -4,6 +4,7 @@ import java.awt.event.*;
 public class MainWindow extends Frame {
     Game game;
     Menu panel;
+    GameOverScreen gameOver;
 
     public MainWindow() {
         addWindowListener(new WindowAdapter() {
@@ -54,7 +55,13 @@ public class MainWindow extends Frame {
     public void startGame(Panel panel) {
         game = new Game(this);
         add(game);
+        panel.setVisible(false);
+        game.ship.requestFocus();
         remove(panel);
-
+    }
+    public void gameOverScreen(long score){
+        gameOver =new GameOverScreen(this, score);
+        add(gameOver);
+        remove(game);
     }
 }
