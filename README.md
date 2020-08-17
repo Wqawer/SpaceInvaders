@@ -6,6 +6,7 @@ Game contains one endless level that scales difficulty to playing time.
 School project for my CS class
 ## How to play
 1.Download repo
+
 2.Build repo with startup class
 
 ## TODO
